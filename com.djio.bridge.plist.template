@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.djio.bridge</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>@DIR@/djio_bridge</string>
+        <string>--esperar</string>
+    </array>
+    <!-- Arranca al iniciar sesión y se relanza siempre que termina
+         (por ejemplo al desenchufar la placa), quedando a la espera.
+         instalar_servicio.command reemplaza la marca de carpeta de las rutas de abajo por la
+         carpeta real del proyecto. -->
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>5</integer>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+    <key>StandardOutPath</key>
+    <string>@DIR@/djio.log</string>
+    <key>StandardErrorPath</key>
+    <string>@DIR@/djio.log</string>
+</dict>
+</plist>

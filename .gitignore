@@ -1,0 +1,18 @@
+# Programas compilados (se generan con los comandos de la sección "Compilar" del LEEME.md)
+/djio_bridge
+/tools/djio_probe
+/tools/djio_stream
+/tools/djio_test
+/tools/tone_to_device
+/tools/grabar_blackhole
+
+# Registros y volcados del puente: se generan solos al usarlo y contienen rutas del usuario
+*.log
+djio-volcado-*.wav
+grabacion*.wav
+
+# Driver original de Numark/Ploytec (material propietario, solo de referencia local)
+/driver/
+
+# macOS
+.DS_Store
